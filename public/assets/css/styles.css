@@ -1,0 +1,468 @@
+body {
+  background: #15161D;
+  color: #fff;
+  font-family: 'Roboto';
+  overflow-x: hidden
+}
+
+body * {
+  outline: transparent;
+}
+
+a.cda-btn,
+button.cda-btn {
+  background: #7179FA;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  height: 36px;
+  padding: 9px 30px;
+}
+
+a.cda-btn:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 19px;
+}
+
+section {
+  position: relative;
+}
+
+section h2 {
+  font-size: 1.715em;
+}
+
+.anchor {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  left: 0;
+  visibility: hidden; 
+}
+
+@media only screen and (max-width: 767px) {
+  .services .anchor {
+    top: 40px; 
+  }
+
+  .virtual .anchor {
+    top: -45px; 
+  }
+
+  .testimonials .anchor {
+    top: -45px; 
+  }
+
+  .contact .anchor {
+    top: -55px; 
+  }
+}
+
+.carousel {
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+	background-color: #1E1F25;
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.1), 0 -1px 0 0 rgba(255,255,255,0.1);
+  padding: 30px 50px;
+}
+
+.carousel p {
+  margin: 0;
+}
+
+li.active a {
+  color: #7179FA !important;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+nav {
+  background-color: #1E1F25;	
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.1);
+}
+
+nav ul.nav {
+  margin-top: 8px;
+}
+
+nav li {
+  margin-right: 4.3ch;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.36em;
+}
+
+.nav>li>a:focus {
+  background: transparent;
+  color: inherit;
+}
+
+.nav>li>a:hover {
+  background: none;
+  color: #7179FA; 
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-top: -5px;
+}
+
+.collapsed .icon-bar {
+  background: #fff;
+  transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.icon-bar {
+  background: #7179FA;
+  transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.top-menu {
+  border-bottom: 1px solid #34353B;
+  height: 32px;
+  text-align: right;
+}
+
+.top-menu span {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.top-menu select {
+  background: transparent;
+  border: none;
+}
+
+.top-menu option {
+  color: #000;
+}
+
+.top-menu .zmdi {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    padding: 10px 15px;
+  }
+}
+
+/* TRIANGULOS */
+
+.triangle-right {
+  background-image: url(../img/right.svg);
+  background-position: top right;
+}
+
+.triangle-left {
+  background-image: url(../img/left.svg);
+  background-position: top left;
+}
+
+.triangle-left,
+.triangle-right {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* CHAMADA PRINCIPAL */
+
+.main {
+  margin-top: 50px;
+  padding: 140px 0;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 2.572em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 1.2em;
+  line-height: 1.9em;
+  margin: 25px auto 40px;
+  width: 30%;
+}
+
+.main .fadeIn,
+.main .fadeIn,
+.main .fadeIn {
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+}
+
+@media only screen and (max-width: 1199px) {
+  .main p {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main p {
+    width: 80%;
+  }
+}
+
+/* CARROSSEL CRIPTOMOEDAS */
+
+.carousel p span {
+  display: block;
+  font-size: 1em;
+  line-height: 1.43em;
+}
+
+.carousel p span.variation,
+.carousel p span.coin {
+  display: inline-block;
+}
+
+.carousel p span.buy {
+  color: #4CAF50;
+}
+
+.carousel p span.sell {
+  color: #F44336;
+}
+
+.crypto .fadeIn {
+  animation-duration: 3s;
+  animation-delay: 0.8s;
+}
+
+.crypto .carousel {
+  min-height: 122px;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel p {
+    font-size: 0.85em;
+  }
+}
+
+  /* SERVIÇOS */
+
+.services {
+  margin-bottom: 80px;  
+  padding-top: 100px;
+}
+
+.services h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.services-item {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px;
+  background-color: #1E1F25;
+  padding: 20px;
+  margin-bottom: 2.85em;
+}
+
+.services-item h3 i.zmdi {
+  font-size: 1.2em;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.services-item h3 {
+  font-size: 1.43em;
+}
+
+@media only screen and (min-width: 992px) {
+  .services-item p {
+    height: 95px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .services-item p {
+    text-align: justify;
+  }
+}
+
+/* BANCO VIRTUAL */
+
+.virtual {
+  padding-top: 30px;
+  margin-bottom: 80px;
+}
+
+.virtual h2 {
+  margin-bottom: 20px;
+}
+
+.virtual button {
+  margin-top: 40px;
+}
+
+.virtual p:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1570px) {
+  .virtual img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .virtual img {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  .virtual p {
+    text-align: justify;
+  }
+
+  .virtual button {
+    display: block;
+    margin: 40px auto 0;
+  }
+}
+
+/* TESTEMUNHOS */
+
+.testimonials {
+  color: #fff;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+  width: 80%;
+}
+
+.testimonials p {
+  font-size: 1.43em;
+  line-height: 1.3em;
+  margin: 0 50px 40px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  height: 75px; 
+  margin: 0 auto 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .testimonials {
+    width: 60%;
+  }
+}
+
+/* CLIENTES */
+
+.clients {
+  margin-bottom: 60px;
+}
+
+.clients .slick-slide img {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 450px) {
+  .clients .slick-slide img {
+    height: 28px;
+  }
+}
+
+/* CONTATO */
+
+.contact h2 {
+  margin-bottom: 36px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact button {
+  display: block;
+  margin: 40px auto 80px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+  background: transparent;
+  border: 1px solid #fff;	
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.contact input,
+.contact select {
+  height: 36px;
+}
+
+.contact option {
+  color: #23242D;
+}
+
+/* RODAPÉ */
+
+footer {
+  background: #23242D;
+  padding: 80px 20px 40px 20px;
+}
+
+footer h4 {
+  font-size: 1.42em;
+  margin-bottom: 20px;
+}
+
+footer p, 
+footer a {
+  margin-bottom: 12px;
+}
+
+footer i.zmdi {
+  font-size: 1.7em;
+  margin-right: 20px;
+  vertical-align: sub;
+}
+
+.social-media {
+  color: #fff;
+  display: block;
+}
+
+.social-media:hover {
+  color: #7179FA;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    padding-top: 60px;
+  }
+
+  footer h4:not(.cda) {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer p {
+    text-align: justify;
+  }
+}
